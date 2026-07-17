@@ -1,87 +1,79 @@
 /*!
  * TERASS ECO Template
- * main.js v1.0
- * https://terasseco.blogspot.com
+ * main.js v1.1
  */
 
 (function () {
   "use strict";
 
-  const TerassEco = {
+  function loadLatestPosts() {
 
-    init() {
-      console.log("TERASS ECO Main.js Loaded");
+    const container = document.getElementById("latest-posts");
 
-      this.menu();
-      this.darkMode();
-      this.backToTop();
-    },
+    if (!container) return;
 
-    menu() {
+    fetch("/feeds/posts/default?alt=json&max-results=6")
+      .then(res => res.json())
+      .then(data => {
 
-      const menuBtn = document.querySelector(".menu-toggle");
-      const nav = document.querySelector(".main-nav");
+        let html = "";
 
-      if (!menuBtn || !nav) return;
+        const posts = data.feed.entry || [];
 
-      menuBtn.addEventListener("click", function () {
-        nav.classList.toggle("active");
-      });
+        posts.forEach(post => {
 
-    },
+          let title = post.title.$t;
+          let link = "#";
 
-    darkMode() {
+          post.link.forEach(item => {
+            if (item.rel === "alternate") {
+              link = item.href;
+            }
+          });
 
-      const btn = document.querySelector(".dark-toggle");
+          let image = "https://via.placeholder.com/600x400";
 
-      if (!btn) return;
+          if (post.media$thumbnail) {
+            image = post.media$thumbnail.url.replace("s72-c", "w600");
+          }
 
-      btn.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
+          let summary = "";
 
-        localStorage.setItem(
-          "terass-dark",
-          document.body.classList.contains("dark-mode")
-        );
-      });
+          if (post.summary) {
+            summary = post.summary.$t;
+          }
 
-      if (localStorage.getItem("terass-dark") === "true") {
-        document.body.classList.add("dark-mode");
-      }
+          summary = summary.replace(/<[^>]+>/g, "");
+          summary = summary.substring(0, 120) + "...";
 
-    },
-
-    backToTop() {
-
-      const btn = document.getElementById("backTop");
-
-      if (!btn) return;
-
-      window.addEventListener("scroll", function () {
-
-        if (window.scrollY > 300) {
-          btn.classList.add("show");
-        } else {
-          btn.classList.remove("show");
-        }
-
-      });
-
-      btn.addEventListener("click", function () {
-
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
+          html += `
+            <article class="latest-card">
+              <img src="${image}" alt="${title}">
+              <div class="latest-body">
+                <h3 class="latest-title">
+                  <a href="${link}">${title}</a>
+                </h3>
+                <p class="latest-desc">${summary}</p>
+                <a class="read-more" href="${link}">
+                  Baca Selengkapnya →
+                </a>
+              </div>
+            </article>
+          `;
         });
 
+        container.innerHTML = html;
+
+      })
+      .catch(() => {
+        container.innerHTML =
+          "<div class='loading-post'>Gagal memuat artikel</div>";
       });
 
-    }
-
-  };
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
-    TerassEco.init();
+    loadLatestPosts();
   });
 
-})();
+})();     
