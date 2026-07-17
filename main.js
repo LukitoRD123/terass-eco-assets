@@ -47,19 +47,32 @@
           summary = summary.substring(0, 120) + "...";
 
           html += `
-            <article class="latest-card">
-              <img src="${image}" alt="${title}">
-              <div class="latest-body">
-                <h3 class="latest-title">
-                  <a href="${link}">${title}</a>
-                </h3>
-                <p class="latest-desc">${summary}</p>
-                <a class="read-more" href="${link}">
-                  Baca Selengkapnya →
-                </a>
-              </div>
-            </article>
-          `;
+<article class="latest-card">
+
+  <img src="${image}" alt="${title}" loading="lazy">
+
+  <div class="latest-body">
+
+    <span class="post-badge">TERASS ECO</span>
+
+    <h3 class="latest-title">
+      <a href="${link}">
+        ${title}
+      </a>
+    </h3>
+
+    <p class="latest-desc">
+      ${summary}
+    </p>
+
+    <a class="read-more" href="${link}">
+      Baca Selengkapnya →
+    </a>
+
+  </div>
+
+</article>
+`;
         });
 
         container.innerHTML = html;
