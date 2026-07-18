@@ -553,3 +553,47 @@ background:#222;
 body.dark-mode .breadcrumb span{
 color:#ddd;
     }
+/*====================================
+TABLE OF CONTENTS V3
+====================================*/
+
+#toc-wrapper{
+background:#fff;
+border-radius:18px;
+padding:20px;
+margin:30px 0;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.toc-title{
+font-size:20px;
+font-weight:700;
+margin-bottom:15px;
+color:#00C853;
+}
+
+#toc-content ul{
+margin:0;
+padding-left:20px;
+}
+
+#toc-content li{
+margin:10px 0;
+}
+
+#toc-content a{
+text-decoration:none;
+color:#333;
+}
+
+#toc-content a:hover{
+color:#00C853;
+}
+
+body.dark-mode #toc-wrapper{
+background:#1e1e1e;
+}
+
+body.dark-mode #toc-content a{
+color:#eee;
+    }
