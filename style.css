@@ -515,3 +515,41 @@ document.addEventListener("DOMContentLoaded", function () {
   reading.innerHTML = "⏱️ Waktu baca " + minutes + " menit";
 
 });
+/*=====================================
+TERASS ECO TECHNOLOGY V3
+Breadcrumb SEO
+=====================================*/
+
+.breadcrumb{
+margin:18px 0;
+padding:12px 18px;
+background:#f5f5f5;
+border-radius:12px;
+font-size:14px;
+display:flex;
+align-items:center;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.breadcrumb a{
+color:#00C853;
+text-decoration:none;
+font-weight:600;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
+}
+
+.breadcrumb span{
+color:#666;
+}
+
+body.dark-mode .breadcrumb{
+background:#222;
+}
+
+body.dark-mode .breadcrumb span{
+color:#ddd;
+    }
