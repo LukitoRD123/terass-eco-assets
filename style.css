@@ -597,3 +597,39 @@ background:#1e1e1e;
 body.dark-mode #toc-content a{
 color:#eee;
     }
+/* =========================================
+   TERASS ECO TECHNOLOGY V3
+   Table of Contents
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const article = document.querySelector(".post-content");
+  const toc = document.getElementById("toc-content");
+
+  if (!article || !toc) return;
+
+  const headings = article.querySelectorAll("h2,h3,h4");
+
+  if (headings.length === 0) {
+    toc.innerHTML = "Daftar isi tidak tersedia.";
+    return;
+  }
+
+  let html = "<ul>";
+
+  headings.forEach(function (heading, index) {
+
+    const id = "section-" + index;
+
+    heading.id = id;
+
+    html += "<li><a href='#" + id + "'>" + heading.innerText + "</a></li>";
+
+  });
+
+  html += "</ul>";
+
+  toc.innerHTML = html;
+
+});
