@@ -816,13 +816,11 @@ MOBILE MENU PREMIUM
 ====================================*/
 
 .main-menu{
-transition:all .35s ease;
+transition:left .35s ease;
 }
 
 .main-menu.active{
-transform:translateX(0);
-opacity:1;
-visibility:visible;
+left:0;
 }
 
 #menu-overlay{
