@@ -115,13 +115,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const menuBtn = document.getElementById('menuBtn');
 const mainMenu = document.querySelector('.main-menu');
-
-console.log(menuBtn);
-console.log(mainMenu);
+const overlay = document.getElementById('menu-overlay');
 
 if (menuBtn && mainMenu) {
+
   menuBtn.addEventListener('click', function () {
-    alert("Menu diklik");
     mainMenu.classList.toggle('active');
+
+    if (overlay) {
+      overlay.classList.toggle('active');
+    }
   });
-                                      }
+
+  if (overlay) {
+    overlay.addEventListener('click', function () {
+      mainMenu.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+  }
+
+}
