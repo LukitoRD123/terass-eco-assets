@@ -633,3 +633,58 @@ document.addEventListener("DOMContentLoaded", function () {
   toc.innerHTML = html;
 
 });
+/*====================================
+AUTHOR BOX PREMIUM
+====================================*/
+
+.author-box{
+display:flex;
+align-items:center;
+gap:20px;
+margin:40px 0;
+padding:25px;
+background:#fff;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.author-avatar{
+width:80px;
+height:80px;
+border-radius:50%;
+background:#00C853;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+color:#fff;
+flex-shrink:0;
+}
+
+.author-info h3{
+margin:0 0 10px;
+font-size:22px;
+}
+
+.author-info p{
+margin:0;
+line-height:1.7;
+color:#666;
+}
+
+body.dark-mode .author-box{
+background:#222;
+}
+
+body.dark-mode .author-info p{
+color:#ddd;
+}
+
+@media(max-width:768px){
+
+.author-box{
+flex-direction:column;
+text-align:center;
+}
+
+    }
