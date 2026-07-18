@@ -112,12 +112,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-// Mobile Menu TERASS ECO
-const menuBtn = document.getElementById('menuBtn');
-const menu = document.querySelector('nav');
 
-if(menuBtn && menu){
-  menuBtn.addEventListener('click', function(){
-    menu.classList.toggle('active');
+const menuBtn = document.getElementById('menuBtn');
+const mainMenu = document.querySelector('.main-menu');
+
+console.log(menuBtn);
+console.log(mainMenu);
+
+if (menuBtn && mainMenu) {
+  menuBtn.addEventListener('click', function () {
+    alert("Menu diklik");
+    mainMenu.classList.toggle('active');
   });
-                           }
+                                      }
