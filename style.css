@@ -496,3 +496,22 @@ padding:35px 25px;
 }
 
                             }
+/* ==========================
+   Reading Time V3.2.1
+========================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const article = document.querySelector(".post-body");
+
+  const reading = document.getElementById("reading-time");
+
+  if (!article || !reading) return;
+
+  const words = article.innerText.trim().split(/\s+/).length;
+
+  const minutes = Math.max(1, Math.ceil(words / 200));
+
+  reading.innerHTML = "⏱️ Waktu baca " + minutes + " menit";
+
+});
