@@ -933,3 +933,242 @@ padding:40px 0;
 
    }
 
+/* ===========================================================
+   V4.0.0
+   STAGE 1.6 - UTILITY CLASSES & BLOGGER FOUNDATION
+   =========================================================== */
+
+
+/* ==========================
+   Blogger Wrapper
+   ========================== */
+
+#outer-wrapper{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+
+#content-wrapper{
+
+    width:100%;
+
+}
+
+
+#main-wrapper{
+
+    width:100%;
+
+    min-width:0;
+
+}
+
+
+#sidebar-wrapper{
+
+    width:100%;
+
+}
+
+
+/* ==========================
+   Display Utilities
+   ========================== */
+
+.d-none{
+    display:none!important;
+}
+
+.d-block{
+    display:block!important;
+}
+
+.d-flex{
+    display:flex!important;
+}
+
+.d-grid{
+    display:grid!important;
+}
+
+
+/* ==========================
+   Alignment
+   ========================== */
+
+.items-center{
+    align-items:center;
+}
+
+.items-start{
+    align-items:flex-start;
+}
+
+.items-end{
+    align-items:flex-end;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.justify-end{
+    justify-content:flex-end;
+}
+
+
+/* ==========================
+   Text
+   ========================== */
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+
+
+/* ==========================
+   Margin Utilities
+   ========================== */
+
+.mt-0{margin-top:0!important;}
+.mt-1{margin-top:10px!important;}
+.mt-2{margin-top:20px!important;}
+.mt-3{margin-top:30px!important;}
+.mt-4{margin-top:40px!important;}
+.mt-5{margin-top:50px!important;}
+
+.mb-0{margin-bottom:0!important;}
+.mb-1{margin-bottom:10px!important;}
+.mb-2{margin-bottom:20px!important;}
+.mb-3{margin-bottom:30px!important;}
+.mb-4{margin-bottom:40px!important;}
+.mb-5{margin-bottom:50px!important;}
+
+
+/* ==========================
+   Padding Utilities
+   ========================== */
+
+.p-0{padding:0!important;}
+.p-1{padding:10px!important;}
+.p-2{padding:20px!important;}
+.p-3{padding:30px!important;}
+.p-4{padding:40px!important;}
+.p-5{padding:50px!important;}
+
+
+/* ==========================
+   Radius
+   ========================== */
+
+.radius-sm{
+    border-radius:var(--radius-small);
+}
+
+.radius{
+    border-radius:var(--radius);
+}
+
+.radius-lg{
+    border-radius:var(--radius-large);
+}
+
+
+/* ==========================
+   Shadow
+   ========================== */
+
+.shadow{
+    box-shadow:var(--shadow);
+}
+
+.shadow-hover:hover{
+    box-shadow:var(--shadow-hover);
+}
+
+
+/* ==========================
+   Transition
+   ========================== */
+
+.transition{
+    transition:var(--transition);
+}
+
+
+/* ==========================
+   Overflow
+   ========================== */
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+
+/* ==========================
+   Cursor
+   ========================== */
+
+.pointer{
+    cursor:pointer;
+}
+
+
+/* ==========================
+   Responsive Image
+   ========================== */
+
+.img-fluid{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+/* ==========================
+   Responsive Video
+   ========================== */
+
+.video-responsive{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding-top:56.25%;
+
+}
+
+
+.video-responsive iframe{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
