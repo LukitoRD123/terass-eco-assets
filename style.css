@@ -100,3 +100,120 @@ iframe{
 [hidden]{
     display:none!important;
     }
+/* ===========================================================
+   V4.0.0
+   STAGE 1.2 - ROOT VARIABLES
+   =========================================================== */
+
+:root{
+
+/* =====================
+   BRAND COLOR
+   ===================== */
+
+--primary:#00C853;
+--secondary:#00B0FF;
+--accent:#FF6D00;
+
+
+/* =====================
+   BACKGROUND COLOR
+   ===================== */
+
+--dark:#101820;
+--white:#ffffff;
+--bg:#f5f7fb;
+--surface:#ffffff;
+
+
+/* =====================
+   TEXT COLOR
+   ===================== */
+
+--text:#222222;
+--text-light:#666666;
+--text-muted:#888888;
+
+
+/* =====================
+   BORDER COLOR
+   ===================== */
+
+--border:#e5e7eb;
+
+
+/* =====================
+   TYPOGRAPHY
+   ===================== */
+
+--font-main:
+Arial, Helvetica, sans-serif;
+
+
+/* =====================
+   FONT SIZE
+   ===================== */
+
+--fs-small:14px;
+--fs-normal:16px;
+--fs-medium:18px;
+--fs-large:24px;
+--fs-title:32px;
+
+
+/* =====================
+   SPACING
+   ===================== */
+
+--space-xs:5px;
+--space-sm:10px;
+--space-md:20px;
+--space-lg:30px;
+--space-xl:50px;
+
+
+/* =====================
+   BORDER RADIUS
+   ===================== */
+
+--radius-small:8px;
+--radius:16px;
+--radius-large:24px;
+
+
+/* =====================
+   SHADOW
+   ===================== */
+
+--shadow:
+0 10px 25px rgba(0,0,0,.15);
+
+--shadow-hover:
+0 15px 35px rgba(0,0,0,.20);
+
+
+/* =====================
+   TRANSITION
+   ===================== */
+
+--transition:.3s ease;
+
+
+/* =====================
+   CONTAINER
+   ===================== */
+
+--container-width:1200px;
+
+
+/* =====================
+   Z-INDEX
+   ===================== */
+
+--z-header:1000;
+--z-menu:2000;
+--z-overlay:3000;
+--z-modal:4000;
+
+
+   }
