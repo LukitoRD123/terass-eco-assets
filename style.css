@@ -175,6 +175,20 @@ transition:.3s;
 background:#009624;
 transform:translateY(-3px);
 }
+.slide1{
+background:url('URL_GAMBAR_1') center center/cover no-repeat;
+height:520px;
+}
+
+.slide2{
+background:url('URL_GAMBAR_2') center center/cover no-repeat;
+height:520px;
+}
+
+.slide3{
+background:url('URL_GAMBAR_3') center center/cover no-repeat;
+height:520px;
+}
 
 @media(max-width:768px){
 
