@@ -149,7 +149,18 @@ iframe{
 --font-main:
 Arial, Helvetica, sans-serif;
 
+--fw-light:300;
+--fw-normal:400;
+--fw-medium:500;
+--fw-semibold:600;
+--fw-bold:700;
+--fw-black:800;
 
+--lh-tight:1.2;
+--lh-normal:1.6;
+--lh-relaxed:1.8;
+
+   
 /* =====================
    FONT SIZE
    ===================== */
@@ -452,4 +463,210 @@ pre{
 
     background:#eeeeee;
 
+}
+
+/* ===========================================================
+   V4.0.0
+   STAGE 1.4 - TYPOGRAPHY SYSTEM
+   =========================================================== */
+
+
+/* ==========================
+   Headings
+   ========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--text);
+
+    font-weight:var(--fw-bold);
+
+    line-height:var(--lh-tight);
+
+    margin-bottom:var(--space-md);
+
+}
+
+
+h1{
+    font-size:42px;
+}
+
+h2{
+    font-size:34px;
+}
+
+h3{
+    font-size:28px;
+}
+
+h4{
+    font-size:22px;
+}
+
+h5{
+    font-size:18px;
+}
+
+h6{
+    font-size:16px;
+}
+
+
+/* ==========================
+   Paragraph
+   ========================== */
+
+p{
+
+    color:var(--text-light);
+
+    font-size:var(--fs-normal);
+
+    line-height:var(--lh-relaxed);
+
+    margin-bottom:var(--space-md);
+
+}
+
+
+/* ==========================
+   Small Text
+   ========================== */
+
+small{
+
+    font-size:13px;
+
+    color:var(--text-muted);
+
+}
+
+
+/* ==========================
+   Strong
+   ========================== */
+
+strong,
+b{
+
+    font-weight:var(--fw-bold);
+
+}
+
+
+/* ==========================
+   Emphasis
+   ========================== */
+
+em,
+i{
+
+    font-style:italic;
+
+}
+
+
+/* ==========================
+   Article Title
+   ========================== */
+
+.post-title{
+
+    font-size:36px;
+
+    font-weight:var(--fw-black);
+
+    line-height:1.3;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================
+   Post Meta
+   ========================== */
+
+.post-meta{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    font-size:14px;
+
+    color:var(--text-muted);
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================
+   Category Label
+   ========================== */
+
+.post-category{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:var(--fw-semibold);
+
+}
+
+
+/* ==========================
+   Text Utilities
+   ========================== */
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.text-uppercase{
+    text-transform:uppercase;
+}
+
+.text-capitalize{
+    text-transform:capitalize;
+}
+
+.text-primary{
+    color:var(--primary);
+}
+
+.text-secondary{
+    color:var(--secondary);
+}
+
+.text-muted{
+    color:var(--text-muted);
 }
