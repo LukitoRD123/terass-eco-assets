@@ -670,3 +670,266 @@ i{
 .text-muted{
     color:var(--text-muted);
 }
+
+
+/* ===========================================================
+   V4.0.0
+   STAGE 1.5 - LAYOUT SYSTEM
+   =========================================================== */
+
+
+/* ==========================
+   Container
+   ========================== */
+
+.container{
+
+    width:100%;
+
+    max-width:var(--container-width);
+
+    margin:0 auto;
+
+    padding:0 var(--space-md);
+
+}
+
+
+/* ==========================
+   Main Wrapper
+   ========================== */
+
+.wrapper{
+
+    width:100%;
+
+    margin:0 auto;
+
+}
+
+
+/* ==========================
+   Section
+   ========================== */
+
+.section{
+
+    padding:60px 0;
+
+}
+
+
+/* ==========================
+   Content Area
+   ========================== */
+
+.content-area{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+
+/* ==========================
+   Main Content
+   ========================== */
+
+.main-content{
+
+    min-width:0;
+
+}
+
+
+/* ==========================
+   Sidebar
+   ========================== */
+
+.sidebar{
+
+    width:100%;
+
+}
+
+
+/* ==========================
+   Grid
+   ========================== */
+
+.grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+
+.grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+.grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+
+/* ==========================
+   Flex
+   ========================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+
+.flex-center{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.flex-between{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* ==========================
+   Gap Utilities
+   ========================== */
+
+.gap-sm{
+
+    gap:10px;
+
+}
+
+
+.gap-md{
+
+    gap:20px;
+
+}
+
+
+.gap-lg{
+
+    gap:30px;
+
+}
+
+
+/* ==========================
+   Width Utilities
+   ========================== */
+
+.w-100{
+
+    width:100%;
+
+}
+
+
+.h-100{
+
+    height:100%;
+
+}
+
+
+/* ==========================
+   Card
+   ========================== */
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================
+   Responsive Layout
+   ========================== */
+
+@media (max-width:992px){
+
+.content-area{
+
+grid-template-columns:1fr;
+
+}
+
+.grid-4{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media (max-width:768px){
+
+.grid-2,
+.grid-3,
+.grid-4{
+
+grid-template-columns:1fr;
+
+}
+
+.section{
+
+padding:40px 0;
+
+}
+
+   }
+
