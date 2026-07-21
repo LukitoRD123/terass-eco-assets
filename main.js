@@ -8,14 +8,12 @@
  * Module  : Core Javascript
  *
  * Feature :
- * - Mobile Menu
  * - Sticky Header
  * - Dark Mode
  * - Back To Top
  * - Latest Posts
  * - Lazy Loading
  * - Scroll Animation
- *
  * ===========================================================
  */
 
@@ -23,47 +21,6 @@
 (function(){
 
 "use strict";
-
-
-/* ===========================================================
-   MOBILE MENU
-=========================================================== */
-
-function mobileMenu(){
-
-const button = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".main-menu");
-const overlay = document.querySelector(".menu-overlay");
-
-
-if(!button || !menu) return;
-
-
-button.addEventListener("click",function(){
-
-menu.classList.toggle("active");
-
-if(overlay){
-overlay.classList.toggle("active");
-}
-
-});
-
-
-if(overlay){
-
-overlay.addEventListener("click",function(){
-
-menu.classList.remove("active");
-overlay.classList.remove("active");
-
-});
-
-}
-
-}
-
-
 
 /* ===========================================================
    STICKY HEADER
