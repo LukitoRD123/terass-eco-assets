@@ -1340,7 +1340,7 @@ padding:40px 0;
 
 .logo-title{
   
-font-size:32px;
+font-size:50px;
    
     font-weight:800;
    
@@ -2395,23 +2395,23 @@ height:42px;
 }
 
 
-.logo img{
+.logo-img{
 
-    width:44px;
+    width:20px;
 
-    height:44px;
+    height:20px;
 
 }
 
 
 .logo-title{
 
-    font-size:18px;
+    font-size:50px;
 
 }
 
 
-.logo-description{
+.logo-desc{
 
     display:none;
 
