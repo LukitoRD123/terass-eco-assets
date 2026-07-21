@@ -1297,9 +1297,9 @@ padding:40px 0;
 
 .logo-img{
 
-    width:20px;
+    width:48px;
 
-    height:20px;
+    height:48px;
 
     object-fit:contain;
 
@@ -1340,15 +1340,17 @@ padding:40px 0;
 
 .logo-title{
   
-font-size:50px;
+font-size:32px;
    
     font-weight:800;
    
-    color:var(--dark);
+    color:#ffffff;
    
     line-height:1.2;
    
     letter-spacing:.5px;
+   margin:0;
+
 }
 
 
@@ -1360,7 +1362,7 @@ font-size:50px;
 
     font-size:13px;
 
-    color:var(--text-muted);
+    color:#ddd;
 
     margin-top:4px;
 
@@ -1384,9 +1386,9 @@ font-size:50px;
 
 #header-wrapper.sticky .logo-img{
    
-    width:48px;
+    width:44px;
 
-    height:48px;
+    height:44px;
 
 }
 
