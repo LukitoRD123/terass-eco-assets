@@ -1761,7 +1761,7 @@ visibility:visible;
    Logo
    ========================== */
 
-.header-wrapper.sticky-active .logo img{
+#header-wrapper.sticky .logo-img{
 
     width:48px;
 
@@ -1770,7 +1770,7 @@ visibility:visible;
 }
 
 
-.header-wrapper.sticky-active .logo-title{
+#header-wrapper.sticky .logo-title{
 
     font-size:22px;
 
