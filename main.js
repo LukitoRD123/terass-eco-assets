@@ -209,7 +209,8 @@ document.addEventListener(
 function(){
 
 
-
+darkMode();
+   
 latestPosts();
 
 scrollAnimation();
