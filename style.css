@@ -9849,6 +9849,13 @@ figure{
 
    }
 
-body{
-background:red !important;
-   }
+
+.logo-img{
+    width:120px !important;
+    height:120px !important;
+}
+
+.logo-title{
+    font-size:60px !important;
+    color:red !important;
+}
