@@ -1278,7 +1278,7 @@ padding:40px 0;
    Logo Wrapper
    ========================== */
 
-.logo{
+.logo-link{
 
     display:flex;
 
@@ -1314,7 +1314,7 @@ padding:40px 0;
    Logo Hover
    ========================== */
 
-.logo:hover img{
+.logo-link:hover .logo-img{
 
     transform:scale(1.05);
 
@@ -1325,7 +1325,7 @@ padding:40px 0;
    Logo Content
    ========================== */
 
-.logo-content{
+.logo-text{
 
     display:flex;
 
@@ -1339,17 +1339,16 @@ padding:40px 0;
    ========================== */
 
 .logo-title{
-
-    font-size:100px;
-
-    font-weight:var(--fw-black);
-
+  
+font-size:32px;
+   
+    font-weight:800;
+   
     color:var(--dark);
-
+   
     line-height:1.2;
-
+   
     letter-spacing:.5px;
-
 }
 
 
@@ -1357,7 +1356,7 @@ padding:40px 0;
    Logo Description
    ========================== */
 
-.logo-description{
+.logo-desc{
 
     font-size:13px;
 
@@ -1383,8 +1382,8 @@ padding:40px 0;
    Sticky Logo
    ========================== */
 
-.header-wrapper.sticky-active .logo img{
-
+#header-wrapper.sticky .logo-img{
+   
     width:48px;
 
     height:48px;
@@ -1392,8 +1391,8 @@ padding:40px 0;
 }
 
 
-.header-wrapper.sticky-active .logo-title{
-
+#header-wrapper.sticky .logo-title{
+   
     font-size:22px;
 
    }
