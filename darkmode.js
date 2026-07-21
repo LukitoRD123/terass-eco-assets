@@ -2,6 +2,10 @@
    DARK MODE
 =========================================================== */
 
+(function(){
+
+"use strict";
+
 function darkMode(){
 
 const button =
