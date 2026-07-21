@@ -1,29 +1,79 @@
 /*!
+ * ===========================================================
  * TERASS ECO TECHNOLOGY
- * mobilemenu.js v3.4
+ * mobilemenu.js V4.0.0
+ * ===========================================================
  */
 
-document.addEventListener("DOMContentLoaded", function () {
+(function(){
 
-  const menuBtn = document.getElementById("menuBtn");
-  const mainMenu = document.querySelector(".main-menu");
-  const overlay = document.getElementById("menu-overlay");
+"use strict";
 
-  if (!menuBtn || !mainMenu) return;
+function initMobileMenu(){
 
-  menuBtn.addEventListener("click", function () {
-    mainMenu.classList.toggle("active");
+const menuBtn  = document.querySelector(".menu-toggle");
+const mainMenu = document.querySelector(".main-menu");
+const overlay  = document.querySelector(".menu-overlay");
 
-    if (overlay) {
-      overlay.classList.toggle("active");
-    }
-  });
+if(!menuBtn || !mainMenu) return;
 
-  if (overlay) {
-    overlay.addEventListener("click", function () {
-      mainMenu.classList.remove("active");
-      overlay.classList.remove("active");
-    });
-  }
+
+/* OPEN / CLOSE MENU */
+
+menuBtn.addEventListener("click",function(){
+
+mainMenu.classList.toggle("active");
+
+if(overlay){
+overlay.classList.toggle("active");
+}
+
+document.body.classList.toggle("menu-open");
 
 });
+
+
+/* CLOSE VIA OVERLAY */
+
+if(overlay){
+
+overlay.addEventListener("click",function(){
+
+mainMenu.classList.remove("active");
+overlay.classList.remove("active");
+document.body.classList.remove("menu-open");
+
+});
+
+}
+
+
+/* CLOSE VIA LINK */
+
+mainMenu.querySelectorAll("a").forEach(link=>{
+
+link.addEventListener("click",function(){
+
+mainMenu.classList.remove("active");
+
+if(overlay){
+overlay.classList.remove("active");
+}
+
+document.body.classList.remove("menu-open");
+
+});
+
+});
+
+}
+
+
+/* INIT */
+
+document.addEventListener(
+"DOMContentLoaded",
+initMobileMenu
+);
+
+})();
