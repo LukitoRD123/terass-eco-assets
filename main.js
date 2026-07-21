@@ -14,9 +14,6 @@
  */
 
 
-(function(){
-
-"use strict";
 
 /* ===========================================================
    LATEST POSTS BLOGGER
@@ -209,7 +206,6 @@ document.addEventListener(
 function(){
 
 
-darkMode();
    
 latestPosts();
 
