@@ -9848,6 +9848,42 @@ figure{
 
 
 }
-body{
-background:#ff0000 !important;
+
+
+/* ===========================================================
+   DARK MODE
+   Version : V4.0.0
+=========================================================== */
+
+body.dark-mode{
+    background:#101820;
+    color:#f5f5f5;
+    transition:.3s;
+}
+
+body.dark-mode a{
+    color:#ffffff;
+}
+
+body.dark-mode .header-wrapper{
+    background:#0b1118;
+}
+
+body.dark-mode .main-menu{
+    background:#0b1118;
+}
+
+body.dark-mode .latest-card{
+    background:#1b2735;
+    color:#ffffff;
+}
+
+body.dark-mode .sidebar .widget{
+    background:#1b2735;
+    color:#ffffff;
+}
+
+body.dark-mode footer{
+    background:#0b1118;
+    color:#ffffff;
 }
