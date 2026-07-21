@@ -8,11 +8,7 @@
  * Module  : Core Javascript
  *
  * Feature :
- * - Sticky Header
- * - Dark Mode
- * - Back To Top
  * - Latest Posts
- * - Lazy Loading
  * - Scroll Animation
  * ===========================================================
  */
@@ -21,84 +17,6 @@
 (function(){
 
 "use strict";
-
-/* ===========================================================
-   STICKY HEADER
-=========================================================== */
-
-function stickyHeader(){
-
-const header =
-document.querySelector(".header-wrapper");
-
-
-if(!header) return;
-
-
-window.addEventListener("scroll",function(){
-
-if(window.scrollY > 50){
-
-header.classList.add("sticky-active");
-
-}else{
-
-header.classList.remove("sticky-active");
-
-}
-
-});
-
-}
-
-
-
-/* ===========================================================
-   BACK TO TOP
-=========================================================== */
-
-function backToTop(){
-
-const button =
-document.querySelector(".back-top");
-
-
-if(!button)return;
-
-
-window.addEventListener("scroll",function(){
-
-
-if(window.scrollY > 400){
-
-button.classList.add("show");
-
-}else{
-
-button.classList.remove("show");
-
-}
-
-
-});
-
-
-button.onclick=function(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-};
-
-
-}
-
-
 
 /* ===========================================================
    LATEST POSTS BLOGGER
@@ -291,13 +209,6 @@ document.addEventListener(
 function(){
 
 
-mobileMenu();
-
-stickyHeader();
-
-darkMode();
-
-backToTop();
 
 latestPosts();
 
