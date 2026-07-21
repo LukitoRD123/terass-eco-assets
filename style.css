@@ -9847,15 +9847,7 @@ figure{
 }
 
 
-   }
-
-
-.logo-img{
-    width:120px !important;
-    height:120px !important;
 }
-
-.logo-title{
-    font-size:60px !important;
-    color:red !important;
+body{
+background:#ff0000 !important;
 }
