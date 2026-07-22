@@ -749,3 +749,24 @@ font-weight:800;
 
    }
 
+
+/* =================================
+   READING PROGRESS BAR
+================================= */
+
+#reading-progress{
+
+position:fixed;
+
+top:0;
+left:0;
+
+height:4px;
+
+width:0%;
+
+background:#FF6D00;
+
+z-index:99999;
+
+}
