@@ -473,3 +473,107 @@ height:max-content;
 }
 
    }
+/* =================================
+   PREMIUM FOOTER
+================================= */
+
+
+#footer-premium{
+
+background:#111827;
+color:#fff;
+
+margin-top:50px;
+padding:50px 20px 20px;
+
+}
+
+
+
+.footer-container{
+
+max-width:1200px;
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:35px;
+
+}
+
+
+
+.footer-box h3{
+
+font-size:22px;
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+
+
+.footer-box p{
+
+color:#d1d5db;
+line-height:1.7;
+
+}
+
+
+
+.footer-box a{
+
+color:#d1d5db;
+text-decoration:none;
+
+line-height:2;
+
+}
+
+
+
+.footer-box a:hover{
+
+color:#FF6D00;
+
+}
+
+
+
+.copyright{
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.15);
+
+margin-top:35px;
+
+padding-top:20px;
+
+color:#9ca3af;
+
+}
+
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
+
