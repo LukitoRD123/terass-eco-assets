@@ -1,0 +1,103 @@
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+const toggle=document.querySelector("#search-toggle");
+
+const close=document.querySelector("#search-close");
+
+const overlay=document.querySelector("#search-overlay");
+
+const input=document.querySelector("#search-input");
+
+const result=document.querySelector("#search-result");
+
+
+
+if(!toggle || !overlay)return;
+
+
+
+toggle.onclick=()=>{
+
+overlay.classList.add("active");
+
+input.focus();
+
+};
+
+
+
+close.onclick=()=>{
+
+overlay.classList.remove("active");
+
+input.value="";
+
+result.innerHTML="";
+
+};
+
+
+
+let posts=[];
+
+
+
+fetch("/feeds/posts/default?alt=json&max-results=100")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+posts=data.feed.entry || [];
+
+});
+
+
+
+input.addEventListener("keyup",()=>{
+
+
+let keyword=input.value.toLowerCase();
+
+
+result.innerHTML="";
+
+
+if(keyword==="")return;
+
+
+
+posts.forEach(post=>{
+
+
+let title=post.title.$t;
+
+
+if(title.toLowerCase().includes(keyword)){
+
+
+let link=post.link.find(
+x=>x.rel==="alternate"
+).href;
+
+
+
+result.innerHTML+=`
+
+<a class="search-item" href="${link}">
+${title}
+</a>
+
+`;
+
+}
+
+
+});
+
+
+});
+
+
+});
