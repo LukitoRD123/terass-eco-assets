@@ -458,3 +458,18 @@ margin-top:15px;
 
 }
 
+/* =================================
+   SIDEBAR STICKY
+================================= */
+
+@media(min-width:769px){
+
+#sidebar{
+
+position:sticky;
+top:90px;
+height:max-content;
+
+}
+
+   }
