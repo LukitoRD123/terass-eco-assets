@@ -1,0 +1,56 @@
+
+/* =================================
+   TERASS ECO TECHNOLOGY
+   Layout 2 Column Blog + Sidebar
+================================= */
+
+#content-wrapper{
+display:grid;
+grid-template-columns:2.3fr 1fr;
+gap:30px;
+max-width:1200px;
+margin:35px auto;
+padding:0 20px;
+}
+
+
+#main-content{
+min-width:0;
+}
+
+
+.blog-section{
+background:#fff;
+padding:25px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+
+#sidebar{
+position:relative;
+}
+
+
+.sidebar-section{
+background:#fff;
+padding:20px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+#content-wrapper{
+grid-template-columns:1fr;
+padding:0 15px;
+}
+
+#sidebar{
+margin-top:25px;
+}
+
+}
