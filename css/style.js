@@ -154,3 +154,156 @@ height:230px;
 }
 
 }
+
+
+/* =================================
+   TERASS ECO TECHNOLOGY
+   PREMIUM POST GRID
+================================= */
+
+
+/* GRID CONTAINER */
+
+.blog-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+
+}
+
+
+
+/* POST CARD */
+
+.post-card{
+
+background:#ffffff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s ease;
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+
+
+.post-card.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+
+.post-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+/* IMAGE */
+
+.post-thumb{
+
+height:220px;
+overflow:hidden;
+
+}
+
+
+.post-thumb img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+
+}
+
+
+
+.post-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+
+/* CONTENT */
+
+.post-info{
+
+padding:20px;
+
+}
+
+
+
+.post-title{
+
+font-size:22px;
+font-weight:800;
+line-height:1.3;
+
+}
+
+
+
+.post-title a{
+
+color:#101820;
+text-decoration:none;
+
+}
+
+
+
+.post-desc{
+
+color:#666;
+font-size:14px;
+line-height:1.6;
+
+}
+
+
+
+/* BUTTON */
+
+.post-button{
+
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+border-radius:30px;
+
+background:#FF6D00;
+color:white!important;
+
+font-size:14px;
+font-weight:600;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.blog-grid{
+
+grid-template-columns:1fr;
+
+}
+
+     }
+
