@@ -727,29 +727,6 @@ font-weight:600;
 
 
 
-/* RELATED POST */
-
-.related-post{
-
-margin-top:40px;
-
-padding-top:25px;
-
-border-top:1px solid #eee;
-
-}
-
-
-
-.related-post h3{
-
-font-size:24px;
-
-font-weight:800;
-
-   }
-
-
 /* =================================
    READING PROGRESS BAR
 ================================= */
@@ -770,3 +747,104 @@ background:#FF6D00;
 z-index:99999;
 
 }
+
+
+/* =================================
+   RELATED POST PREMIUM
+================================= */
+
+
+#related-post{
+
+margin-top:50px;
+
+padding-top:30px;
+
+border-top:1px solid #eee;
+
+}
+
+
+
+#related-post h3{
+
+font-size:26px;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+}
+
+
+
+.related-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+
+
+.related-card{
+
+background:#fff;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.related-card img{
+
+width:100%;
+
+height:140px;
+
+object-fit:cover;
+
+}
+
+
+
+.related-card h4{
+
+padding:15px;
+
+font-size:16px;
+
+}
+
+
+
+.related-card a{
+
+color:#111827;
+
+text-decoration:none;
+
+}
+
+
+
+@media(max-width:768px){
+
+.related-grid{
+
+grid-template-columns:1fr;
+
+}
+
+   }
+
+
