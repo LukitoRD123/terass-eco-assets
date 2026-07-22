@@ -578,7 +578,7 @@ grid-template-columns:1fr;
 }
 
 /* =================================
-   back to top
+   backtop
 ================================= */
 
 #backTop{
