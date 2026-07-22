@@ -609,3 +609,143 @@ z-index:9999;
 
 }
 
+/* =================================
+   SINGLE POST PREMIUM
+================================= */
+
+
+.post-outer{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:30px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.post-title{
+
+font-size:38px;
+
+font-weight:900;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+}
+
+
+
+.post-header{
+
+color:#6b7280;
+
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+
+
+/* GAMBAR UTAMA */
+
+.post-body img{
+
+width:100%;
+
+height:auto;
+
+border-radius:18px;
+
+margin:20px 0;
+
+}
+
+
+
+/* ISI ARTIKEL */
+
+.post-body{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#374151;
+
+}
+
+
+
+/* PARAGRAF */
+
+.post-body p{
+
+margin-bottom:20px;
+
+}
+
+
+
+/* SHARE BUTTON */
+
+.share-box{
+
+display:flex;
+
+gap:12px;
+
+margin-top:35px;
+
+}
+
+
+
+.share-box a{
+
+padding:10px 18px;
+
+border-radius:30px;
+
+background:#FF6D00;
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+
+
+/* RELATED POST */
+
+.related-post{
+
+margin-top:40px;
+
+padding-top:25px;
+
+border-top:1px solid #eee;
+
+}
+
+
+
+.related-post h3{
+
+font-size:24px;
+
+font-weight:800;
+
+   }
+
