@@ -473,6 +473,7 @@ height:max-content;
 }
 
    }
+
 /* =================================
    PREMIUM FOOTER
 ================================= */
@@ -576,4 +577,35 @@ grid-template-columns:1fr;
 
 }
 
+/* =================================
+   back to top
+================================= */
+
+#backTop{
+
+position:fixed;
+
+right:25px;
+bottom:25px;
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+border:none;
+
+background:#FF6D00;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+z-index:9999;
+
+}
 
