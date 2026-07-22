@@ -312,3 +312,149 @@ grid-template-columns:1fr;
 
      }
 
+/* =================================
+   SIDEBAR PREMIUM
+================================= */
+
+
+#sidebar{
+
+display:flex;
+flex-direction:column;
+gap:25px;
+
+}
+
+
+
+.sidebar-section .widget{
+
+background:#fff;
+border-radius:18px;
+padding:20px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+/* TITLE */
+
+.sidebar-section .title{
+
+font-size:20px;
+font-weight:800;
+
+border-left:5px solid #FF6D00;
+
+padding-left:12px;
+
+margin-bottom:18px;
+
+}
+
+
+
+/* SEARCH BOX */
+
+.search-box input{
+
+width:100%;
+padding:14px;
+
+border-radius:30px;
+border:1px solid #ddd;
+
+}
+
+
+
+/* POPULAR POST */
+
+.PopularPosts ul{
+
+padding:0;
+margin:0;
+
+}
+
+
+.PopularPosts li{
+
+display:flex;
+gap:12px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.PopularPosts img{
+
+width:80px;
+height:60px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+}
+
+
+
+/* LABEL */
+
+.Label a{
+
+display:inline-block;
+
+background:#f3f4f6;
+
+padding:8px 14px;
+
+border-radius:20px;
+
+margin:4px;
+
+font-size:13px;
+
+}
+
+
+
+/* AFFILIATE CARD */
+
+.affiliate-card{
+
+background:
+linear-gradient(135deg,#111827,#374151);
+
+color:white;
+
+padding:20px;
+
+border-radius:18px;
+
+}
+
+
+
+.affiliate-card a{
+
+background:#FF6D00;
+
+color:#fff;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+display:inline-block;
+
+margin-top:15px;
+
+}
+
