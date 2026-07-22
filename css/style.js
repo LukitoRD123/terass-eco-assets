@@ -15,6 +15,11 @@
   padding:0 20px;
 }
 
+/* ===== FEATURED POST FULL WIDTH ===== */
+
+#featured-post{
+  grid-column:1 / -1;
+}
 
 /* ===== MAIN BLOG ===== */
 
