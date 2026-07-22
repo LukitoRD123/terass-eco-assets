@@ -69,3 +69,88 @@
   }
 
   }
+
+
+/* =========================
+ FEATURED POST
+========================= */
+
+
+#featured-post{
+margin-bottom:35px;
+}
+
+
+.featured-card{
+
+display:grid;
+grid-template-columns:1.5fr 1fr;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+
+.featured-image img{
+
+width:100%;
+height:350px;
+object-fit:cover;
+
+}
+
+
+.featured-content{
+
+padding:30px;
+
+}
+
+
+.featured-content h2{
+
+font-size:30px;
+font-weight:800;
+
+}
+
+
+.featured-content a{
+
+color:#101820;
+text-decoration:none;
+
+}
+
+
+.read-more{
+
+display:inline-block;
+margin-top:20px;
+background:#FF6D00;
+color:#fff!important;
+padding:12px 20px;
+border-radius:30px;
+
+}
+
+
+
+@media(max-width:768px){
+
+.featured-card{
+
+grid-template-columns:1fr;
+
+}
+
+
+.featured-image img{
+
+height:230px;
+
+}
+
+}
