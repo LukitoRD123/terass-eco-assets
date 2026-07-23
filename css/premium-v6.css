@@ -189,3 +189,50 @@ body.dark-mode .search-container{
 background:rgba(31,41,55,.85);
 
  }
+
+/* =================================
+   MICRO INTERACTION PREMIUM
+================================= */
+
+
+button,
+a{
+
+-webkit-tap-highlight-color:transparent;
+
+transition:
+transform .25s ease,
+opacity .25s ease;
+
+}
+
+
+/* CLICK EFFECT */
+
+button:active,
+a:active{
+
+transform:scale(.96);
+
+}
+
+
+
+/* ICON HOVER */
+
+#search-toggle:hover,
+#darkmode-toggle:hover,
+#mobile-toggle:hover{
+
+transform:translateY(-3px);
+
+}
+
+
+/* LINK SMOOTH */
+
+.menu a:hover{
+
+opacity:.75;
+
+}
