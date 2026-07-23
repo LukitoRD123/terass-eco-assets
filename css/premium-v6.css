@@ -1654,3 +1654,85 @@ width:100%;
 }
 
  }
+
+
+/* =================================
+   AUTHOR PROFILE PREMIUM
+================================= */
+
+.author-profile{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:40px;
+
+padding:25px;
+
+background:#fff;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.author-image{
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:3px solid #FF6D00;
+
+}
+
+.author-about{
+
+flex:1;
+
+}
+
+.author-about h2,
+.author-about h3{
+
+margin:0 0 10px;
+
+font-size:22px;
+
+font-weight:700;
+
+color:#111827;
+
+}
+
+.author-about p{
+
+margin:0;
+
+font-size:15px;
+
+line-height:1.7;
+
+color:#6b7280;
+
+}
+
+@media(max-width:768px){
+
+.author-profile{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+ }
