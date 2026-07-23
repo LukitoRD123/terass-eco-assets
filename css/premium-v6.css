@@ -1527,3 +1527,64 @@ height:auto;
 }
 
    
+/* =================================
+   TABLE OF CONTENT PREMIUM
+================================= */
+
+
+#toc{
+
+background:#fff;
+
+border-radius:16px;
+
+padding:20px;
+
+margin:25px 0;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.08);
+
+}
+
+
+.toc-title{
+
+font-size:20px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+
+#toc ul{
+
+padding-left:20px;
+
+}
+
+
+#toc li{
+
+margin:10px 0;
+
+}
+
+
+#toc a{
+
+color:#111827;
+
+text-decoration:none;
+
+}
+
+
+#toc a:hover{
+
+color:#FF6D00;
+
+}
+
