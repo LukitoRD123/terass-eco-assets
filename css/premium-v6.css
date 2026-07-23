@@ -236,3 +236,19 @@ transform:translateY(-3px);
 opacity:.75;
 
 }
+
+/* =================================
+   READING TIME PREMIUM
+================================= */
+
+.reading-time{
+
+font-size:14px;
+
+color:#6b7280;
+
+margin-bottom:15px;
+
+font-weight:600;
+
+}
