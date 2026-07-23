@@ -1832,3 +1832,98 @@ height:150px;
 }
 
  }
+
+
+/* =================================
+   CTA BUTTON PREMIUM
+================================= */
+
+
+.cta-box{
+
+margin:35px 0;
+
+padding:30px;
+
+background:linear-gradient(
+135deg,
+#111827,
+#1f2937
+);
+
+border-radius:20px;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+
+.cta-box h3{
+
+font-size:24px;
+
+font-weight:800;
+
+margin-bottom:10px;
+
+}
+
+
+.cta-box p{
+
+font-size:15px;
+
+color:#d1d5db;
+
+margin-bottom:20px;
+
+}
+
+
+.cta-button{
+
+display:inline-block;
+
+padding:14px 30px;
+
+background:#FF6D00;
+
+color:#fff!important;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+
+.cta-button:hover{
+
+transform:translateY(-3px);
+
+opacity:.9;
+
+}
+
+
+@media(max-width:768px){
+
+.cta-box{
+
+padding:25px 20px;
+
+}
+
+.cta-box h3{
+
+font-size:20px;
+
+}
+
+ }
