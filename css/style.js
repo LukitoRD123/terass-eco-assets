@@ -1224,3 +1224,33 @@ display:block;
 }
 
    }
+
+/* =================================
+   BREADCRUMB PREMIUM
+================================= */
+
+.breadcrumb{
+
+font-size:14px;
+
+color:#6b7280;
+
+margin-bottom:20px;
+
+}
+
+
+.breadcrumb a{
+
+color:#FF6D00;
+
+text-decoration:none;
+
+}
+
+
+.breadcrumb span{
+
+margin:0 8px;
+
+   }
