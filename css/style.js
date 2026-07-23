@@ -1072,3 +1072,86 @@ body.dark-mode #footer-premium{
 background:#020617;
 
 }
+
+
+/* =================================
+   MOBILE MENU PREMIUM V2
+================================= */
+
+@media (max-width:768px){
+
+#main-nav{
+
+position:fixed;
+
+left:-320px;
+top:0;
+
+width:300px;
+height:100vh;
+
+background:#111827;
+
+display:block;
+
+padding:80px 20px;
+
+transition:.35s;
+
+z-index:9999;
+
+overflow-y:auto;
+
+}
+
+#main-nav.active{
+
+left:0;
+
+}
+
+#main-nav .menu{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+#main-nav .menu a{
+
+color:#fff;
+
+font-size:16px;
+
+text-decoration:none;
+
+}
+
+#mobile-overlay{
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.55);
+
+display:none;
+
+z-index:9998;
+
+}
+
+#mobile-overlay.active{
+
+display:block;
+
+}
+
+   }
