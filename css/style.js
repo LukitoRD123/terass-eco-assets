@@ -962,3 +962,113 @@ text-decoration:none;
 background:#f3f4f6;
 
 }
+
+
+/* =================================
+   DARK MODE PREMIUM
+================================= */
+
+
+body.dark-mode{
+
+background:#0f172a;
+
+color:#e5e7eb;
+
+}
+
+
+
+/* HEADER */
+
+body.dark-mode #header-wrapper{
+
+background:#020617;
+
+}
+
+
+
+/* POST CARD */
+
+body.dark-mode .post-outer{
+
+background:#111827;
+
+color:#e5e7eb;
+
+}
+
+
+
+/* ISI ARTIKEL */
+
+body.dark-mode .post-body{
+
+color:#d1d5db;
+
+}
+
+
+
+/* SIDEBAR */
+
+body.dark-mode .sidebar-section .widget{
+
+background:#111827;
+
+color:#fff;
+
+}
+
+
+
+/* RELATED */
+
+body.dark-mode .related-card{
+
+background:#111827;
+
+}
+
+
+
+body.dark-mode .related-card a{
+
+color:#fff;
+
+}
+
+
+
+/* SEARCH */
+
+body.dark-mode .search-container{
+
+background:#111827;
+
+color:white;
+
+}
+
+
+
+body.dark-mode #search-input{
+
+background:#1f2937;
+
+color:white;
+
+border-color:#374151;
+
+}
+
+
+
+/* FOOTER */
+
+body.dark-mode #footer-premium{
+
+background:#020617;
+
+}
