@@ -143,3 +143,49 @@ transform:translateY(-2px);
 
 }
 
+/* GLASSMORPHISM PREMIUM */
+
+
+/* HEADER GLASS */
+
+#header-wrapper{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
+}
+
+
+/* SEARCH OVERLAY */
+
+#search-overlay{
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(5px);
+-webkit-backdrop-filter:blur(5px);
+}
+
+
+/* SEARCH CONTAINER */
+
+.search-container{
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+border-radius:20px;
+}
+
+
+
+/* GLASS DARK MODE */
+
+body.dark-mode #header-wrapper{
+
+background:rgba(17,24,39,.75);
+
+}
+
+
+body.dark-mode .search-container{
+
+background:rgba(31,41,55,.85);
+
+ }
