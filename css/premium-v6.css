@@ -1993,7 +1993,7 @@ display:block;
 
 
 
-.hero-overlay{
+.hero-caption{
 
 position:absolute;
 
@@ -2019,7 +2019,7 @@ color:#fff;
 
 
 
-.hero-overlay h2{
+.hero-caption h2{
 
 font-size:36px;
 
@@ -2031,7 +2031,7 @@ margin-bottom:10px;
 
 
 
-.hero-overlay p{
+.hero-caption p{
 
 font-size:16px;
 
@@ -2041,7 +2041,7 @@ line-height:1.6;
 
 
 
-.hero-button{
+.hero-btn{
 
 display:inline-block;
 
@@ -2117,14 +2117,14 @@ height:350px;
 }
 
 
-.hero-overlay{
+.hero-caption{
 
 padding:25px;
 
 }
 
 
-.hero-overlay h2{
+.hero-caption h2{
 
 font-size:24px;
 
