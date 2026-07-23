@@ -959,27 +959,66 @@ margin-top:20px;
 }
 
 
+/* SEARCH CARD PREMIUM */
 
-.search-item{
+.search-card{
 
-display:block;
+display:flex;
+
+gap:15px;
 
 padding:15px;
 
-border-bottom:1px solid #eee;
+margin-bottom:12px;
 
-color:#111827;
+border-radius:15px;
+
+background:#fff;
 
 text-decoration:none;
 
+color:#111827;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
 }
 
 
-.search-item:hover{
+.search-card:hover{
 
-background:#f3f4f6;
+transform:translateY(-3px);
 
 }
+
+
+.search-card img{
+
+width:90px;
+
+height:70px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+}
+
+
+
+.search-info h4{
+
+margin:0;
+
+font-size:16px;
+
+line-height:1.4;
+
+     }
+
+
 
 /* SEARCH NO RESULT */
 
