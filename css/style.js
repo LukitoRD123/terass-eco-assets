@@ -1254,3 +1254,15 @@ text-decoration:none;
 margin:0 8px;
 
    }
+
+/* IMAGE PERFORMANCE */
+
+img{
+
+max-width:100%;
+
+height:auto;
+
+}
+
+   
