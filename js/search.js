@@ -83,10 +83,35 @@ x=>x.rel==="alternate"
 
 
 
+let thumb="https://via.placeholder.com/100";
+
+
+if(post.media$thumbnail){
+
+thumb=post.media$thumbnail.url
+.replace("/s72-c/","/s1600/");
+
+}
+
+
+
 result.innerHTML+=`
 
-<a class="search-item" href="${link}">
+<a class="search-card" href="${link}">
+
+
+<img src="${thumb}" />
+
+
+<div class="search-info">
+
+<h4>
 ${title}
+</h4>
+
+</div>
+
+
 </a>
 
 `;
