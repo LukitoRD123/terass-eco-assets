@@ -64,3 +64,82 @@ transform:translateY(0);
 
 }
 
+/* =================================
+   PREMIUM CARD HOVER
+================================= */
+
+
+.post-outer,
+.sidebar-section .widget,
+.related-card,
+.featured-card,
+.search-card{
+
+transition:
+transform .3s ease,
+box-shadow .3s ease;
+
+}
+
+
+
+/* CARD HOVER */
+
+.post-outer:hover,
+.sidebar-section .widget:hover,
+.related-card:hover,
+.featured-card:hover,
+.search-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+/* IMAGE ZOOM EFFECT */
+
+.related-card img,
+.search-card img,
+.featured-card img{
+
+transition:
+transform .5s ease;
+
+}
+
+
+
+.related-card:hover img,
+.search-card:hover img,
+.featured-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+
+
+/* BUTTON MICRO INTERACTION */
+
+button,
+.read-more,
+.share-box a{
+
+transition:.25s ease;
+
+}
+
+
+
+button:hover,
+.read-more:hover,
+.share-box a:hover{
+
+transform:translateY(-2px);
+
+}
+
