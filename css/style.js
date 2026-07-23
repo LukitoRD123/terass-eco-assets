@@ -981,6 +981,18 @@ background:#f3f4f6;
 
 }
 
+/* SEARCH NO RESULT */
+
+.no-result{
+
+padding:15px;
+
+color:#6b7280;
+
+text-align:center;
+
+     }
+
 
 /* =================================
    DARK MODE PREMIUM
