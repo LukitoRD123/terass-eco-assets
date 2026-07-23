@@ -2131,3 +2131,32 @@ font-size:24px;
 }
 
  }
+
+.hero-dot{
+
+display:inline-block;
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:#fff;
+
+opacity:.5;
+
+margin:5px;
+
+cursor:pointer;
+
+}
+
+
+.hero-dot.active{
+
+opacity:1;
+
+background:#FF6D00;
+
+ }
