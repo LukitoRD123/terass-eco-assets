@@ -609,6 +609,24 @@ z-index:9999;
 
 }
 
+#backTop{
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+
+#backTop:hover{
+
+transform:translateY(-4px);
+
+background:#E65100;
+
+     }
+
+
 /* =================================
    SINGLE POST PREMIUM
 ================================= */
