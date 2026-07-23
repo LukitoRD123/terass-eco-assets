@@ -36,3 +36,31 @@ img{
  max-width:100%;
  display:block;
 }
+
+/* =================================
+   SCROLL ANIMATION PREMIUM
+================================= */
+
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:
+opacity .6s ease,
+transform .6s ease;
+
+}
+
+
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
