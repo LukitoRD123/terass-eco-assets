@@ -297,28 +297,6 @@ font-weight:600;
 }
 
 
-/* ===== SIDEBAR ===== */
-
-#sidebar{
-  position:relative;
-}
-
-
-.sidebar-section{
-  background:#ffffff;
-  border-radius:16px;
-  padding:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-
-.sidebar-section h2{
-  font-size:20px;
-  font-weight:700;
-  border-bottom:3px solid #FF6D00;
-  padding-bottom:10px;
-}
-
 
 /* ===== RESPONSIVE MOBILE ===== */
 
